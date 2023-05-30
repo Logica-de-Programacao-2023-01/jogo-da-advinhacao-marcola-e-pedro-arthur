@@ -37,7 +37,7 @@ func main() {
 		var jogar_denovo string
 		fmt.Println("Você deseja jogar novamente? (sim ou não)")
 		fmt.Scan(&jogar_denovo)
-		if jogar_denovo == "não" {
+		if jogar_denovo != "sim" && jogar_denovo != "s" {
 			fmt.Println("--------------------------------")
 			num := 0
 			for num < len(slice_tentativas) {
